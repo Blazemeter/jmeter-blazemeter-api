@@ -1,0 +1,31 @@
+{
+  "api_version": 4,
+  "error": null,
+  "result": [  {
+    "id": 307677,
+    "name": "The one workspace",
+    "userId": 538821,
+    "created": 1555618146,
+    "updated": 1685988546,
+    "enabled": true,
+    "dedicatedIpsEnabled": true,
+    "privateLocationsEnabled": true,
+    "owner":     {
+      "id": 538821,
+      "email": "ricardo.poleo@cl.abstracta.us",
+      "displayName": "Ricardo Poleo Abs"
+    },
+    "membersCount": 1,
+    "allowance":     {
+      "amount": 0,
+      "type": "vuh"
+    },
+    "accountId": 312843
+  }],
+  "request_id": "64c1982132c38",
+  "limit": 1000,
+  "skip": 0,
+  "total": 1,
+  "hidden": 0,
+  "cached": true
+}

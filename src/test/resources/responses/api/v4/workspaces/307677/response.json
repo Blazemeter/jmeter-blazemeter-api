@@ -1,0 +1,1472 @@
+{
+  "api_version": 4,
+  "error": null,
+  "result":   {
+    "id": 307677,
+    "name": "The one workspace",
+    "userId": 538821,
+    "created": 1555618146,
+    "updated": 1685988546,
+    "enabled": true,
+    "dedicatedIpsEnabled": true,
+    "privateLocationsEnabled": true,
+    "owner":     {
+      "id": 538821,
+      "email": "ricardo.poleo@cl.abstracta.us",
+      "displayName": "Ricardo Poleo Abs"
+    },
+    "membersCount": 1,
+    "allowance":     {
+      "amount": 0,
+      "type": "vuh"
+    },
+    "accountId": 312843,
+    "locations":     [
+            {
+        "id": "harbor-5591335d8588531f5cde3a04",
+        "title": "Sandbox",
+        "name": "Sandbox",
+        "provider": "Sandbox",
+        "limits":         {
+          "threadsPerEngine": 20,
+          "concurrency": 20,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": true,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-east4-a",
+        "title": "US East (Virginia, Google)",
+        "name": "US East (Virginia)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-east1-b",
+        "title": "US East (South Carolina, Google)",
+        "name": "US East (South Carolina)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-west1-a",
+        "title": "US West (Oregon, Google)",
+        "name": "US West (Oregon)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-central1-a",
+        "title": "US Central (Iowa, Google)",
+        "name": "US Central (Iowa)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "northamerica-northeast1-a",
+        "title": "Canada East (Montreal, Google)",
+        "name": "Canada East (Montreal)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "europe-west2-a",
+        "title": "EU West (London, Google)",
+        "name": "EU West (London)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "europe-west3-a",
+        "title": "EU West (Frankfurt, Google)",
+        "name": "EU West (Frankfurt)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "europe-west1-b",
+        "title": "EU West (Belgium, Google)",
+        "name": "EU West (Belgium)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "europe-west4-b",
+        "title": "EU West (Netherlands, Google)",
+        "name": "EU West (Netherlands)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "asia-east1-a",
+        "title": "Asia East (Taiwan, Google)",
+        "name": "Asia East (Taiwan)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "asia-northeast1-a",
+        "title": "Asia Northeast (Japan, Google)",
+        "name": "Asia Northeast (Japan)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "asia-southeast1-a",
+        "title": "Asia Southeast (Singapore, Google)",
+        "name": "Asia Southeast (Singapore)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "asia-south1-a",
+        "title": "Asia South (Mumbai, Google)",
+        "name": "Asia South (Mumbai)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "australia-southeast1-a",
+        "title": "Australia (Sydney, Google)",
+        "name": "Australia (Sydney)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "southamerica-east1-a",
+        "title": "Brazil (Sao Paulo, Google)",
+        "name": "Brazil (Sao Paulo)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "asia-northeast2-a",
+        "title": "Japan (Osaka, Google)",
+        "name": "Japan (Osaka)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-west2-a",
+        "title": "US West (California, Google)",
+        "name": "US West (California)",
+        "provider": "Google Cloud Platform",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-east-1",
+        "title": "US East (Virginia, AWS)",
+        "name": "US East (Virginia)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-east-2",
+        "title": "US East (Ohio, AWS)",
+        "name": "US East (Ohio)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-west-1",
+        "title": "US West (N.California, AWS)",
+        "name": "US West (N.California)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "us-west-2",
+        "title": "US West (Oregon, AWS)",
+        "name": "US West (Oregon)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "ca-central-1",
+        "title": "Canada (Central, AWS)",
+        "name": "Canada (Central)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "eu-west-1",
+        "title": "EU West (Ireland, AWS)",
+        "name": "EU West (Ireland)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "eu-west-2",
+        "title": "EU West (London, AWS)",
+        "name": "EU West (London)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "eu-west-3",
+        "title": "EU West (Paris, AWS)",
+        "name": "EU West (Paris)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "eu-central-1",
+        "title": "EU Central (Frankfurt, AWS)",
+        "name": "EU Central (Frankfurt)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "ap-northeast-1",
+        "title": "Asia Pacific (Tokyo, AWS)",
+        "name": "Asia Pacific (Tokyo)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "ap-south-1",
+        "title": "Asia Pacific (Mumbai, AWS)",
+        "name": "Asia Pacific (Mumbai)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "ap-northeast-2",
+        "title": "Asia Pacific (Seoul, AWS)",
+        "name": "Asia Pacific (Seoul)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "ap-southeast-1",
+        "title": "Asia Pacific (Singapore, AWS)",
+        "name": "Asia Pacific (Singapore)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "ap-southeast-2",
+        "title": "Australia (Sydney, AWS)",
+        "name": "Australia (Sydney)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "sa-east-1",
+        "title": "South America (Sao Paulo, AWS)",
+        "name": "South America (Sao Paulo)",
+        "provider": "Amazon Web Services",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": true},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-east-us-1",
+        "title": "US East (Virginia, Azure)",
+        "name": "US East (Virginia)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-east-us-2",
+        "title": "US East 2 (Virginia, Azure)",
+        "name": "US East 2 (Virginia)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-west-us-1",
+        "title": "US West (California, Azure)",
+        "name": "US West (California)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-west-us-2",
+        "title": "US West 2 (Washington, Azure)",
+        "name": "US West 2 (US West 2)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-us-west-central",
+        "title": "US West Central (Wyoming, Azure)",
+        "name": "US West Central (US West Central)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-central-us-1",
+        "title": "US Central (Iowa, Azure)",
+        "name": "US Central (Iowa)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-north-central-us-1",
+        "title": "US North Central (Illinois, Azure)",
+        "name": "US North Central (Illinois)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-south-central-us-1",
+        "title": "US South Central (Texas, Azure)",
+        "name": "US South Central (Texas)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-east-ca",
+        "title": "Canada East (Quebec City, Azure)",
+        "name": "Canada East (Quebec City)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-central-ca",
+        "title": "Canada Central (Toronto, Azure)",
+        "name": "Canada Central (Toronto)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-west-europe-1",
+        "title": "EU West (Netherlands, Azure)",
+        "name": "EU West (Netherlands)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-north-europe-1",
+        "title": "EU North (Ireland, Azure)",
+        "name": "EU North (Ireland)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-eu-west-3",
+        "title": "UK West (Cardiff, Azure)",
+        "name": "UK West (Cardiff)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-eu-west-2",
+        "title": "UK South (London, Azure)",
+        "name": "UK South (London)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-japan-east-1",
+        "title": "Japan East (Tokyo, Azure)",
+        "name": "Japan East (Tokyo, Saitama)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-japan-west-1",
+        "title": "Japan West (Osaka, Azure)",
+        "name": "Japan West (Osaka)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-ap-northeast-1",
+        "title": "Korea Central (Seoul, Azure)",
+        "name": "Korea Central (Seoul)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-ap-northeast-2",
+        "title": "Korea South (Busan, Azure)",
+        "name": "Korea South (Busan)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-east-asia-1",
+        "title": "East Asia (Hong Kong, Azure)",
+        "name": "East Asia (Hong Kong)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-southeast-asia-1",
+        "title": "Southeast Asia (Singapore, Azure)",
+        "name": "Southeast Asia (Singapore)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-central-asia-1",
+        "title": "Central India (Pune, Azure)",
+        "name": "Central India (Pune)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-central-asia-2",
+        "title": "West India (Mumbai, Azure)",
+        "name": "West India (Mumbai)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-central-asia-3",
+        "title": "South India (Chennai, Azure)",
+        "name": "South India (Chennai)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-east-au-1",
+        "title": "Australia East (New South Wales, Azure)",
+        "name": "Australia East (New South Wales)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-southeast-au-1",
+        "title": "Australia Southeast (Victoria, Azure)",
+        "name": "Australia Southeast (Victoria)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "azure-brazil-south-1",
+        "title": "Brazil South (Sao Paulo, Azure)",
+        "name": "Brazil South (Sao Paulo)",
+        "provider": "Microsoft Azure",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 500,
+          "engines": 5,
+          "duration": 60
+        },
+        "capabilities": {"dedicatedIps": false},
+        "sandbox": false,
+        "purposes":         {
+          "load": true,
+          "functional": false,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-5ab3c64ec8589f914c7b25db",
+        "title": "US East (Virginia) - Functional GUI Test",
+        "name": "US East (Virginia) - Functional GUI Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": false,
+          "grid": true,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-5d25f94f9950ce73cd105f53",
+        "title": "EU West (London) - Functional GUI Test",
+        "name": "EU West (London) - Functional GUI Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": false,
+          "grid": true,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-5d25f95f206f10730f21f1b4",
+        "title": "US West (Oregon) - Functional GUI Test",
+        "name": "US West (Oregon) - Functional GUI Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": false,
+          "grid": true,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-58d3b97ff132adc0347b23c6",
+        "title": "Functional Testing Default Location",
+        "name": "Functional Testing Default Location",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-59464ffd67f3bf63cb7b23c9",
+        "title": "US East (S. Carolina) - Functional Test",
+        "name": "US East (S. Carolina) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-59465fcde4d6a240d97b23c6",
+        "title": "US West (Los Angeles) - Functional Test",
+        "name": "US West (Los Angeles) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-594662d6e6e960aedb7b23c7",
+        "title": "US West (Oregon) - Functional Test",
+        "name": "US West (Oregon) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-59466cb1e4d6a296e37b23c8",
+        "title": "EU West (Belgium) - Functional Test",
+        "name": "EU West (Belgium) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-5946708a65e00138e57b23c6",
+        "title": "EU West (London) - Functional Test",
+        "name": "EU West (London) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-59467342e4d6a205e67b23c6",
+        "title": "Asia Pacific (Singapore) - Functional Test",
+        "name": "Asia Pacific (Singapore) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      },
+            {
+        "id": "harbor-5946756fe4d6a204e37b23c6",
+        "title": "Australia (Sydney) - Functional Test",
+        "name": "Australia (Sydney) - Functional Test",
+        "provider": "Public Locations",
+        "limits":         {
+          "threadsPerEngine": 100,
+          "concurrency": 100,
+          "engines": 0,
+          "duration": 60
+        },
+        "capabilities":         {
+          "dedicatedIps": false,
+          "isPrivileged": true
+        },
+        "sandbox": false,
+        "purposes":         {
+          "load": false,
+          "functional": true,
+          "grid": false,
+          "serviceMock": false
+        }
+      }
+    ],
+    "activeMember":     {
+      "id": 538821,
+      "email": "ricardo.poleo@cl.abstracta.us",
+      "displayName": "Ricardo Poleo Abs",
+      "roles": ["manager"],
+      "enabled": true,
+      "access": 1690373634
+    }
+  },
+  "request_id": "64c18464f0862"
+}

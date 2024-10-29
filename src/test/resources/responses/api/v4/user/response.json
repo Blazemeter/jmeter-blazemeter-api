@@ -1,0 +1,65 @@
+{
+  "api_version": 4,
+  "error": null,
+  "result":   {
+    "id": 538821,
+    "email": "ricardo.poleo@cl.abstracta.us",
+    "passwordUpdateTime": 1555618146,
+    "access": 1690408954,
+    "login": 1689870111,
+    "firstName": "Ricardo",
+    "lastName": "Poleo Abs",
+    "timezone": 0,
+    "enabled": true,
+    "roles":     [
+      "user",
+      "new-billing",
+      "authenticated"
+    ],
+    "created": 1555618146,
+    "updated": 1686661827,
+    "elev_io_user_hash": "cdb7f580d5f9045612e75210f0b7b9451c622e5c5dcd2cf9bf7b85622e7da7f4",
+    "defaultProject":     {
+      "accountId": 312843,
+      "accountName": "RP Abstracta Account",
+      "workspaceName": "The one workspace",
+      "id": 385358,
+      "name": "Default project",
+      "userId": 538821,
+      "description": null,
+      "underMigration": null,
+      "created": 1555618154,
+      "updated": 1555618154,
+      "organizationId": null,
+      "workspaceId": 307677
+    },
+    "defaultProjectId": 385358,
+    "displayName": "Ricardo Poleo Abs",
+    "features": [],
+    "mail": "ricardo.poleo@cl.abstracta.us",
+    "name": "Ricardo",
+    "preferences":     {
+      "id": "5cb8d96aaa59f0382634e1e9",
+      "userId": 538821,
+      "activePlatform": "functional",
+      "visitedMockServices": true,
+      "activeOrganizationId": 1752425,
+      "activeWorkspaceId": 1752425,
+      "activeAccountId": 1221671,
+      "aggregateReportFields":       [
+        "labelName",
+        "samples",
+        "avgResponseTime",
+        "90line",
+        "95line",
+        "99line",
+        "minResponseTime",
+        "maxResponseTime",
+        "avgBytes",
+        "avgThroughput",
+        "errorsRate"
+      ]
+    }
+  },
+  "request_id": "64c19820ea808"
+}
