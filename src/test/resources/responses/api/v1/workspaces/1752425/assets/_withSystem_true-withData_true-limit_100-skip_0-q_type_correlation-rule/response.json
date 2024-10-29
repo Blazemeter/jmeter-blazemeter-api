@@ -1,0 +1,471 @@
+{
+  "limit": 100,
+  "skip": 0,
+  "total": 5,
+  "timestamp": "2023-08-07T18:21:21+00:00",
+  "request_id": "37080a0a5c3a67d145756fea31f76f09",
+  "result":   [
+        {
+      "metadata":       {
+        "version": "1.0",
+        "application": "SalesForce",
+        "description": "<!DOCTYPE html><html><head><style>table {  border-collapse: collapse;  width: 60%;}td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}<\/style><\/head><body>   This template is only available for Enterprise accounts. For more information, contact sales@blazemeter.com  <br>  This Template allows both detecting and correlating dynamic values in <span style='color: red'>Salesforce login process<\/span>. <br> <br>This allows you to log in and log out, correlating the Salesforce login session using the following tokens:<br><br> <table>  <tr>    <th>Token Name<\/th>    <th>Sample Value<\/th>  <\/tr>  <tr>    <td>fwuid<\/td>    <td>U29CODJZUktMd3....<\/td>  <\/tr>  <tr>    <td>aura.token<\/td>    <td>eyJub25jZSI6IW....<\/td>  <\/tr><\/table><br> <b>Note:<\/b><br>&emsp;Before recording the SalesForce login session:<br>&emsp;&emsp;&emsp;&emsp;Select the ‘bzm – correlation recorder” and click on the “Request Filtering” tab and remove this line “.*(?!(\\.json))(\\.js)(.*|$)” from the URL Patterns to exclude section.<br> <br>&emsp;&emsp;<\/body><\/html>"
+      },
+      "id": "1460e805-e6dd-4e5d-8962-5b7c38e1bbcb",
+      "accountId": 352831,
+      "workspaceId": 736558,
+      "packageId": "97176c5f-f918-4236-9cb3-3e53e40a9504",
+      "name": "SalesForce_1_0",
+      "displayName": "SalesForce_1_0",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T16:09:47.934Z",
+      "createdBy": 1559466,
+      "updatedAt": "2023-08-07T16:09:53.100Z",
+      "updatedBy": 1559466,
+      "isSystem": true,
+      "isDigital": false,
+      "isEnterprise": true,
+      "isAccShared": true,
+      "createdByEmail": "kpuzey@perforce.com",
+      "updatedByEmail": "kpuzey@perforce.com",
+      "data":       {
+        "fileName": "SalesForce-1-0-template.json",
+        "contentType": null,
+        "content": "{\r\n  \"type\": \"correlation\",\r\n  \"id\" : \"SalesForce\",\r\n  \"description\" : \"<!DOCTYPE html><html><head><style>table {  border-collapse: collapse;  width: 60%;}td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}<\/style><\/head><body>   This template is only available for Enterprise accounts. For more information, contact sales@blazemeter.com  <br>  This Template allows both detecting and correlating dynamic values in <span style='color: red'>Salesforce login process<\/span>. <br> <br>This allows you to log in and log out, correlating the Salesforce login session using the following tokens:<br><br> <table>  <tr>    <th>Token Name<\/th>    <th>Sample Value<\/th>  <\/tr>  <tr>    <td>fwuid<\/td>    <td>U29CODJZUktMd3....<\/td>  <\/tr>  <tr>    <td>aura.token<\/td>    <td>eyJub25jZSI6IW....<\/td>  <\/tr><\/table><br> <b>Note:<\/b><br>&emsp;Before recording the SalesForce login session:<br>&emsp;&emsp;&emsp;&emsp;Select the ‘bzm – correlation recorder” and click on the “Request Filtering” tab and remove this line “.*(?!(\\\\.json))(\\\\.js)(.*|$)” from the URL Patterns to exclude section.<br> <br>&emsp;&emsp;<\/body><\/html>\",\r\n  \"version\" : \"1.0\",\r\n  \"author\" : \"BlazeMeter\",\r\n  \"url\" : \"https://www.blazemeter.com/\",\r\n  \"components\" : \"\",\r\n  \"responseFilters\" : \"\",\r\n   \"groups\" : [ {\r\n    \"id\" : \"1.0\",\r\n    \"rules\" : [ {\r\n      \"referenceName\" : \"fwuid\",\r\n      \"correlationExtractor\" : {\r\n        \"type\" : \"com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor\",\r\n        \"target\" : \"RESPONSE_HEADERS\",\r\n        \"multiValued\" : true,\r\n        \"regex\" : \"avascript\\\\/(.+?)\\\\/aura_prod\"\r\n      },\r\n      \"correlationReplacement\" : {\r\n        \"type\" : \"com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement\",\r\n        \"regex\" : \"\\\"fwuid\\\":\\\"([^\\\"]+)\\\"\"\r\n      },\r\n      \"enabled\" : true\r\n    }, {\r\n      \"referenceName\" : \"aura.token\",\r\n      \"correlationExtractor\" : {\r\n        \"type\" : \"com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor\",\r\n        \"multiValued\" : true,\r\n        \"regex\" : \"\\\\,\\\\\\\"token\\\\\\\"\\\\:\\\\\\\"(.+?)\\\\\\\"\\\\,\\\\\\\"staticR\"\r\n      },\r\n      \"correlationReplacement\" : {\r\n        \"type\" : \"com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement\",\r\n        \"regex\" : \"aura.token=([^&]+)\"\r\n      },\r\n      \"enabled\" : true\r\n    } ],\r\n    \"enable\" : true\r\n  } ],\r\n  \"dependencies\" : [ ],\r\n  \"repositoryId\" : \"local\",\r\n  \"changes\" : \"Initial Version\",\r\n  \"installed\" : false\r\n}\r\n"
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "1.0",
+        "application": "wordpress",
+        "description": "<!DOCTYPE html> <html> <head> <style> table { border-collapse: collapse; width: 60%; } td, th { border: 1px solid #DDDDDD; text-align: left; padding: 8px; } tr:nth-child(even) { background-color: #DDDDDD; } <\/style> <\/head> <body> This Template allows both detecting and correlating dynamic values in <span style='color: red'>Wordpress application flows<\/span>. <br> <br>This allows you to view, edit and add posts, comments and tags, correlating the wordpress authentication using the following tokens:<br><br> <table> <tr> <th>Token Name<\/th> <th>Sample Value<\/th> <\/tr> <tr> <td>_wpnonce<\/td> <td>bbf7ab9bb3<\/td> <\/tr> <tr> <td>_ajax_nonce<\/td> <td>e7d4e6f478<\/td> <\/tr> <tr> <td>closedpostboxesnonce<\/td> <td>3102b4f217<\/td> <\/tr> <tr> <td>_wpnonce_add-tag<\/td> <td>002a9d3172<\/td> <\/tr> <tr> <td>_ajax_nonce-add-category<\/td> <td>f75940b379<\/td> <\/tr> <tr> <td>_ajax_nonce-add-meta<\/td> <td>f3999bb1db<\/td> <\/tr> <tr> <td>meta-box-order-nonce<\/td> <td>2e1312348c<\/td> <\/tr> <tr> <td>samplepermalinknonce<\/td> <td>c5a722cdf0<\/td> <\/tr> <\/table><br> <b>Note:<\/b><br><br> <br> <\/body> <\/html>"
+      },
+      "id": "161ffca4-970b-4b89-9a1d-b500eba75be7",
+      "accountId": 352831,
+      "workspaceId": 736558,
+      "packageId": "97176c5f-f918-4236-9cb3-3e53e40a9504",
+      "name": "wordpress_1_0",
+      "displayName": "wordpress_1_0",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T16:14:22.384Z",
+      "createdBy": 1559466,
+      "updatedAt": "2023-08-07T16:14:27.940Z",
+      "updatedBy": 1559466,
+      "isSystem": true,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "kpuzey@perforce.com",
+      "updatedByEmail": "kpuzey@perforce.com",
+      "data":       {
+        "fileName": "wordpress-1.0-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "wordpress",
+          "description": "<!DOCTYPE html> <html> <head> <style> table { border-collapse: collapse; width: 60%; } td, th { border: 1px solid #DDDDDD; text-align: left; padding: 8px; } tr:nth-child(even) { background-color: #DDDDDD; } <\/style> <\/head> <body> This Template allows both detecting and correlating dynamic values in <span style='color: red'>Wordpress application flows<\/span>. <br> <br>This allows you to view, edit and add posts, comments and tags, correlating the wordpress authentication using the following tokens:<br><br> <table> <tr> <th>Token Name<\/th> <th>Sample Value<\/th> <\/tr> <tr> <td>_wpnonce<\/td> <td>bbf7ab9bb3<\/td> <\/tr> <tr> <td>_ajax_nonce<\/td> <td>e7d4e6f478<\/td> <\/tr> <tr> <td>closedpostboxesnonce<\/td> <td>3102b4f217<\/td> <\/tr> <tr> <td>_wpnonce_add-tag<\/td> <td>002a9d3172<\/td> <\/tr> <tr> <td>_ajax_nonce-add-category<\/td> <td>f75940b379<\/td> <\/tr> <tr> <td>_ajax_nonce-add-meta<\/td> <td>f3999bb1db<\/td> <\/tr> <tr> <td>meta-box-order-nonce<\/td> <td>2e1312348c<\/td> <\/tr> <tr> <td>samplepermalinknonce<\/td> <td>c5a722cdf0<\/td> <\/tr> <\/table><br> <b>Note:<\/b><br><br> <br> <\/body> <\/html>",
+          "version": "1.0",
+          "author": "BlazeMeter",
+          "url": "https://www.blazemeter.com/",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "1.0",
+            "rules":             [
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "\\{\\\"nonce\\\"\\:\\\"(.+?)\\\"\\,\\\"cache\\\"\\:"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "logout&#038\\;_wpnonce\\=(.+?)\\'\\>Log\\sOut\\<"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_wpnonce=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce_add-tag",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "g\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce_add-tag",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_wpnonce_add-tag=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_ajax_nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<\\/td\\>\\n"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_ajax_nonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_ajax_nonce=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_ajax_nonce-add-category",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "y\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\\t\\\t\\\t\\\t\\\t\\<"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_ajax_nonce-add-category",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_ajax_nonce-add-category=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_ajax_nonce-add-meta",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "\\-add\\-meta\\=(.+?)\\\"\\s\\s\\/\\>\\<\\/div"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_ajax_nonce-add-meta",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_ajax_nonce-add-meta=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_elementor_edit_mode_nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_elementor_edit_mode_nonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_elementor_edit_mode_nonce=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "closedpostboxesnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "closedpostboxesnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\n"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "closedpostboxesnonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "closedpostboxesnonce=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "samplepermalinknonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<\\/div\\>"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "samplepermalinknonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "samplepermalinknonce=([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "meta-box-order-nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "order-nonce\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\\t\\<\\/div"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "meta-box-order-nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "multiValued": true,
+                  "regex": "order-nonce\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "meta-box-order-nonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "meta-box-order-nonce=([^&]+)"
+                },
+                "enabled": true
+              }
+            ],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "local",
+          "changes": "Added posts related flows. ",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "1.0",
+        "application": "test1",
+        "description": "Template testing sharing capabilities"
+      },
+      "id": "adbce074-bdd1-466c-b74b-554f64fa54c6",
+      "accountId": 1221671,
+      "workspaceId": 1752425,
+      "packageId": "4e1b3fc5-d2d6-42d1-b583-4edf8b0f13a8",
+      "name": "test1_1_0",
+      "displayName": "test1_1_0",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T18:19:35.669Z",
+      "createdBy": 538821,
+      "updatedAt": "2023-08-07T18:19:35.669Z",
+      "updatedBy": 538821,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "ricardo.poleo@cl.abstracta.us",
+      "updatedByEmail": "ricardo.poleo@cl.abstracta.us",
+      "data":       {
+        "fileName": "test1-1.0-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "test1",
+          "description": "Template testing sharing capabilities",
+          "version": "1.0",
+          "author": "RP",
+          "url": "NA",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "Manual",
+            "rules": [            {
+              "referenceName": "refvar1",
+              "correlationExtractor":               {
+                "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                "regex": "regex1"
+              },
+              "correlationReplacement":               {
+                "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                "regex": "replacement1"
+              },
+              "enabled": true
+            }],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "local",
+          "changes": "NA",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "1.0",
+        "application": "SAP",
+        "description": "<!DOCTYPE html><html><head><style>table {  border-collapse: collapse;  width: 60%;}td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}<\/style><\/head><body>   This template is only available for Enterprise accounts. For more information, contact sales@blazemeter.com  <br>   This Template allows both detecting and correlating dynamic values in <span style='color: red'>SAP S4/Hana login process<\/span>. <br> <br>This provides you with the ability of log in and log out, correlating the SAP S4/Hana login session using the following token:<br><br> <table>  <tr>    <th>Token Name<\/th><th>Sample Value<\/th><\/tr><tr><td>sap-login-XSRF<\/td><td>RZRTWUZFUTOFWDUG1234....<\/td><\/tr><\/table><br><b>Note:<\/b><br>&emsp;N/A.<br>&emsp;&emsp;&emsp;&emsp;<br> <br>&emsp;&emsp;<\/body><\/html>"
+      },
+      "id": "bd3f8f43-b46b-4938-908d-d4f1913149de",
+      "accountId": 352831,
+      "workspaceId": 736558,
+      "packageId": "97176c5f-f918-4236-9cb3-3e53e40a9504",
+      "name": "SAP_1_0",
+      "displayName": "SAP_1_0",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T16:10:06.896Z",
+      "createdBy": 1559466,
+      "updatedAt": "2023-08-07T16:10:12.567Z",
+      "updatedBy": 1559466,
+      "isSystem": true,
+      "isDigital": false,
+      "isEnterprise": true,
+      "isAccShared": true,
+      "createdByEmail": "kpuzey@perforce.com",
+      "updatedByEmail": "kpuzey@perforce.com",
+      "data":       {
+        "fileName": "SAP-1.0-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "SAP",
+          "description": "<!DOCTYPE html><html><head><style>table {  border-collapse: collapse;  width: 60%;}td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}<\/style><\/head><body>   This template is only available for Enterprise accounts. For more information, contact sales@blazemeter.com  <br>   This Template allows both detecting and correlating dynamic values in <span style='color: red'>SAP S4/Hana login process<\/span>. <br> <br>This provides you with the ability of log in and log out, correlating the SAP S4/Hana login session using the following token:<br><br> <table>  <tr>    <th>Token Name<\/th><th>Sample Value<\/th><\/tr><tr><td>sap-login-XSRF<\/td><td>RZRTWUZFUTOFWDUG1234....<\/td><\/tr><\/table><br><b>Note:<\/b><br>&emsp;N/A.<br>&emsp;&emsp;&emsp;&emsp;<br> <br>&emsp;&emsp;<\/body><\/html>",
+          "version": "1.0",
+          "author": "BlazeMeter",
+          "url": "https://blazemeter.com",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "1.0",
+            "rules": [            {
+              "referenceName": "sap-login-XSRF",
+              "correlationExtractor":               {
+                "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                "multiValued": true,
+                "regex": "<input type=\\\"hidden\\\" name=\\\"sap-login-XSRF\\\" value=\\\"(.+)\\\">",
+                "matchNr": -1
+              },
+              "correlationReplacement":               {
+                "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                "regex": "sap-login-XSRF=(.+)",
+                "replacementString": "${__unescapeHtml(${sap-login-XSRF})}"
+              },
+              "enabled": true
+            }],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "local",
+          "changes": "Initial",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "0.1",
+        "application": "dgtest",
+        "description": "This is an example of a <b>Correlation Template<\/b>, using Correlation Recorder on <span style='color: red'>Wordpress<\/span>. <br> <br>This allows you to log in and log out, considering their Wordpress login session 'nonce'.<br><br>Use this example as base for your Correlation Templates."
+      },
+      "id": "d7171ebb-76a9-46dd-a875-219c6e5627fe",
+      "accountId": 1221671,
+      "workspaceId": 1752425,
+      "packageId": "4e1b3fc5-d2d6-42d1-b583-4edf8b0f13a8",
+      "name": "dgtest_0_1",
+      "displayName": "dgtest_0_1",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T18:11:00.786Z",
+      "createdBy": 336324,
+      "updatedAt": "2023-08-07T18:11:00.786Z",
+      "updatedBy": 336324,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "3dgiordano@gmail.com",
+      "updatedByEmail": "3dgiordano@gmail.com",
+      "data":       {
+        "fileName": "dgtest-0.1-alpha-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "dgtest",
+          "description": "This is an example of a <b>Correlation Template<\/b>, using Correlation Recorder on <span style='color: red'>Wordpress<\/span>. <br> <br>This allows you to log in and log out, considering their Wordpress login session 'nonce'.<br><br>Use this example as base for your Correlation Templates.",
+          "version": "0.1",
+          "components": "",
+          "responseFilters": "",
+          "rules": [          {
+            "referenceName": "sessionNonce",
+            "correlationExtractor":             {
+              "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+              "regex": "_wpnonce=(.*)\""
+            },
+            "correlationReplacement":             {
+              "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+              "regex": "_wpnonce=(.*)"
+            }
+          }],
+          "dependencies": [],
+          "repositoryId": "dgtest",
+          "changes": "This section is used to add all the changes for each version you are saving.\n\nNo dependencies needed to run this template."
+        }
+      },
+      "dataAccessible": true
+    }
+  ]
+}

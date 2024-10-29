@@ -1,4 +1,21 @@
-# BlazeMeter Java SDK
+# JMeter BlazeMeter API
+
+This project is a fork from [Blazemeter/blazemeter-api-client](https://github.com/Blazemeter/blazemeter-api-client)  project.
+
+This project is consumed by [Blazemeter/bzm-repositories-plugin](https://github.com/Blazemeter/bzm-repositories-plugin) JMeter Plugin. Where the last mentioned is not only a JMeter Plugin but an Extension for the [Auto Correlation Recorder](https://github.com/Blazemeter/CorrelationRecorder).
+
+**Why aren't we using the original project**
+
+This forked version supports the same API calls done in the original project but also gives support to the new Correlation Rule Templates schemas.
+
+Aside from that difference which could have been implemented in the original repo by contributing.
+The original project used a lot of third party dependencies such as HttpOK among others. Resulting (while compiling the uber-jar) in a large and heavy jar file, that increased sustantialy the bzm-repositories project when including it.
+
+Since this project required to be shipped with bzm-repositories the team decided to re-implement the HTTP communication using JMeter dependencies (Apache HTTP),therefore, drastically reducing the size of the uber-jar.
+
+With that being said, we can define this project as a *Lightweight JMeter Dependent BlazeMeter API for Java*
+
+---
 
 We, at BlazeMeter, aim to bring you tools for quicker, and easier development.
 

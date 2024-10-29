@@ -1,0 +1,274 @@
+{
+  "limit": 100,
+  "skip": 0,
+  "total": 3,
+  "timestamp": "2023-07-26T21:56:35+00:00",
+  "request_id": "c4c57e6ba6a903a764980975f7614dc0",
+  "result":   [
+        {
+      "metadata":       {
+        "version": "0.0.2",
+        "application": "wordpress1",
+        "description": "0.0.2 wordpress1 correlation rules (test)"
+      },
+      "id": "ae5e8540-e646-49c0-9331-be7bf65659d3",
+      "accountId": 312843,
+      "workspaceId": 307677,
+      "packageId": "b2d40133-fd87-46e0-94f4-c9ff1e7169f6",
+      "name": "wordpress1_0_0_2",
+      "displayName": "wordpress1_0_0_2",
+      "type": "correlation-rule",
+      "createdAt": "2023-06-08T16:47:39.446Z",
+      "createdBy": 538821,
+      "updatedAt": "2023-07-03T20:50:44.040Z",
+      "updatedBy": 538821,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "ricardo.poleo@cl.abstracta.us",
+      "updatedByEmail": "ricardo.poleo@cl.abstracta.us",
+      "data":       {
+        "fileName": null,
+        "contentType": null,
+        "content":         {
+          "id": "wordpress1",
+          "description": "Wordpress Exported 1",
+          "version": "0.0.2",
+          "author": "Exported",
+          "url": "NA",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "Exported-1",
+            "rules":             [
+                            {
+                "referenceName": "X-WP-Nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "regex": "dleware\\(\\s\\\"(.+?)\\\"\\s\\)\\;\\n"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "X-WP-Nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "target": "RESPONSE_HEADERS",
+                  "regex": "WP\\-Nonce\\:\\s(.+?)\\n"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "X-WP-Nonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "X-WP-Nonce(?=|: )([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "regex": "\\;_wpnonce\\=(.+?)\\'\\>Log\\sOut\\<"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_wpnonce(?=|: )([^&]+)"
+                },
+                "enabled": true
+              }
+            ],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "bzm-ws-307677",
+          "changes": "1",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "0.0.3",
+        "application": "wordpress1",
+        "description": "0.0.3 wordpress1 correlation rules (test)"
+      },
+      "id": "bd080e3c-3521-41d4-9ecd-33c0ad29b8c6",
+      "accountId": 312843,
+      "workspaceId": 307677,
+      "packageId": "b2d40133-fd87-46e0-94f4-c9ff1e7169f6",
+      "name": "wordpress1-0_0_3",
+      "displayName": "wordpress1-0_0_3",
+      "type": "correlation-rule",
+      "createdAt": "2023-06-08T16:48:25.572Z",
+      "createdBy": 538821,
+      "updatedAt": "2023-06-08T16:48:25.572Z",
+      "updatedBy": 538821,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "ricardo.poleo@cl.abstracta.us",
+      "updatedByEmail": "ricardo.poleo@cl.abstracta.us",
+      "data":       {
+        "fileName": null,
+        "contentType": "application/json; charset=UTF-8",
+        "content":         {
+          "id": "wordpress1",
+          "description": "Wordpress Exported 1",
+          "version": "0.0.3",
+          "author": "Exported",
+          "url": "NA",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "Exported-1",
+            "rules":             [
+                            {
+                "referenceName": "X-WP-Nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "regex": "dleware\\(\\s\\\"(.+?)\\\"\\s\\)\\;\\n"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "X-WP-Nonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "target": "RESPONSE_HEADERS",
+                  "regex": "WP\\-Nonce\\:\\s(.+?)\\n"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "X-WP-Nonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "X-WP-Nonce(?=|: )([^&]+)"
+                },
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "regex": "\\;_wpnonce\\=(.+?)\\'\\>Log\\sOut\\<"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                  "regex": "e\\\"\\svalue\\=\\\"(.+?)\\\"\\s\\/\\>\\<input"
+                },
+                "correlationReplacement": null,
+                "enabled": true
+              },
+                            {
+                "referenceName": "_wpnonce",
+                "correlationExtractor": null,
+                "correlationReplacement":                 {
+                  "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                  "regex": "_wpnonce(?=|: )([^&]+)"
+                },
+                "enabled": true
+              }
+            ],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "bzm-ws-307677",
+          "changes": "1",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "0.0.1",
+        "application": "mendix",
+        "description": "1 other correlation rules"
+      },
+      "id": "c36e3751-c270-497f-b40f-3554bc470b99",
+      "accountId": 312843,
+      "workspaceId": 307677,
+      "packageId": "b2d40133-fd87-46e0-94f4-c9ff1e7169f6",
+      "name": "mendix_0_0_1",
+      "displayName": "mendix_0_0_1",
+      "type": "correlation-rule",
+      "createdAt": "2023-06-28T13:41:22.348Z",
+      "createdBy": 538821,
+      "updatedAt": "2023-06-28T13:41:22.348Z",
+      "updatedBy": 538821,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "ricardo.poleo@cl.abstracta.us",
+      "updatedByEmail": "ricardo.poleo@cl.abstracta.us",
+      "data":       {
+        "fileName": "other-0.0.150-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "mendix",
+          "description": "1 other correlation rules",
+          "version": "0.0.1",
+          "author": "N/A",
+          "url": "https://www.blazemeter.com?workspace=307677",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "other",
+            "rules": [            {
+              "referenceName": "token",
+              "correlationExtractor":               {
+                "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                "regex": "token123=(.*)\""
+              },
+              "correlationReplacement":               {
+                "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                "regex": "token456=(.*)"
+              },
+              "enabled": true
+            }],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "bzm-ws-307677",
+          "changes": "N/A",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    }
+  ]
+}

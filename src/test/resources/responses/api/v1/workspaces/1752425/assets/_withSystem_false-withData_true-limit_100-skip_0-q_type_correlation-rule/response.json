@@ -1,0 +1,119 @@
+{
+  "limit": 100,
+  "skip": 0,
+  "total": 2,
+  "timestamp": "2023-08-07T18:21:24+00:00",
+  "request_id": "fe18c5d8b36939e7cf89668bad288204",
+  "result":   [
+        {
+      "metadata":       {
+        "version": "1.0",
+        "application": "test1",
+        "description": "Template testing sharing capabilities"
+      },
+      "id": "adbce074-bdd1-466c-b74b-554f64fa54c6",
+      "accountId": 1221671,
+      "workspaceId": 1752425,
+      "packageId": "4e1b3fc5-d2d6-42d1-b583-4edf8b0f13a8",
+      "name": "test1_1_0",
+      "displayName": "test1_1_0",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T18:19:35.669Z",
+      "createdBy": 538821,
+      "updatedAt": "2023-08-07T18:19:35.669Z",
+      "updatedBy": 538821,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "ricardo.poleo@cl.abstracta.us",
+      "updatedByEmail": "ricardo.poleo@cl.abstracta.us",
+      "data":       {
+        "fileName": "test1-1.0-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "test1",
+          "description": "Template testing sharing capabilities",
+          "version": "1.0",
+          "author": "RP",
+          "url": "NA",
+          "components": "",
+          "responseFilters": "",
+          "groups": [          {
+            "id": "Manual",
+            "rules": [            {
+              "referenceName": "refvar1",
+              "correlationExtractor":               {
+                "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+                "regex": "regex1"
+              },
+              "correlationReplacement":               {
+                "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+                "regex": "replacement1"
+              },
+              "enabled": true
+            }],
+            "enable": true
+          }],
+          "dependencies": [],
+          "repositoryId": "local",
+          "changes": "NA",
+          "installed": false
+        }
+      },
+      "dataAccessible": true
+    },
+        {
+      "metadata":       {
+        "version": "0.1",
+        "application": "dgtest",
+        "description": "This is an example of a <b>Correlation Template<\/b>, using Correlation Recorder on <span style='color: red'>Wordpress<\/span>. <br> <br>This allows you to log in and log out, considering their Wordpress login session 'nonce'.<br><br>Use this example as base for your Correlation Templates."
+      },
+      "id": "d7171ebb-76a9-46dd-a875-219c6e5627fe",
+      "accountId": 1221671,
+      "workspaceId": 1752425,
+      "packageId": "4e1b3fc5-d2d6-42d1-b583-4edf8b0f13a8",
+      "name": "dgtest_0_1",
+      "displayName": "dgtest_0_1",
+      "type": "correlation-rule",
+      "createdAt": "2023-08-07T18:11:00.786Z",
+      "createdBy": 336324,
+      "updatedAt": "2023-08-07T18:11:00.786Z",
+      "updatedBy": 336324,
+      "isSystem": false,
+      "isDigital": false,
+      "isEnterprise": false,
+      "isAccShared": true,
+      "createdByEmail": "3dgiordano@gmail.com",
+      "updatedByEmail": "3dgiordano@gmail.com",
+      "data":       {
+        "fileName": "dgtest-0.1-alpha-template.json",
+        "contentType": null,
+        "content":         {
+          "type": "correlation",
+          "id": "dgtest",
+          "description": "This is an example of a <b>Correlation Template<\/b>, using Correlation Recorder on <span style='color: red'>Wordpress<\/span>. <br> <br>This allows you to log in and log out, considering their Wordpress login session 'nonce'.<br><br>Use this example as base for your Correlation Templates.",
+          "version": "0.1",
+          "components": "",
+          "responseFilters": "",
+          "rules": [          {
+            "referenceName": "sessionNonce",
+            "correlationExtractor":             {
+              "type": "com.blazemeter.jmeter.correlation.core.extractors.RegexCorrelationExtractor",
+              "regex": "_wpnonce=(.*)\""
+            },
+            "correlationReplacement":             {
+              "type": "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+              "regex": "_wpnonce=(.*)"
+            }
+          }],
+          "dependencies": [],
+          "repositoryId": "dgtest",
+          "changes": "This section is used to add all the changes for each version you are saving.\n\nNo dependencies needed to run this template."
+        }
+      },
+      "dataAccessible": true
+    }
+  ]
+}

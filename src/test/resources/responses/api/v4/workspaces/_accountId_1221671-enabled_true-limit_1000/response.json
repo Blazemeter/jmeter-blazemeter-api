@@ -1,0 +1,74 @@
+{
+  "api_version": 4,
+  "error": null,
+  "result":   [
+        {
+      "id": 1752425,
+      "name": "Abstracta",
+      "userId": 1559466,
+      "created": 1690381673,
+      "updated": 1690460023,
+      "enabled": true,
+      "dedicatedIpsEnabled": true,
+      "privateLocationsEnabled": true,
+      "owner":       {
+        "id": 1559466,
+        "email": "kpuzey@perforce.com",
+        "displayName": "Keith Puzey"
+      },
+      "membersCount": 4,
+      "allowance":       {
+        "amount": 39987,
+        "type": "credits"
+      },
+      "accountId": 1221671
+    },
+        {
+      "id": 1694665,
+      "name": "Demo",
+      "userId": 1559466,
+      "created": 1687266760,
+      "updated": 1690460023,
+      "enabled": true,
+      "dedicatedIpsEnabled": true,
+      "privateLocationsEnabled": true,
+      "owner":       {
+        "id": 1559466,
+        "email": "kpuzey@perforce.com",
+        "displayName": "Keith Puzey"
+      },
+      "membersCount": 4,
+      "allowance":       {
+        "amount": 39987,
+        "type": "credits"
+      },
+      "accountId": 1221671
+    },
+        {
+      "id": 1752426,
+      "name": "Shared Workspace",
+      "userId": 1559466,
+      "created": 1690381684,
+      "updated": 1690460023,
+      "enabled": true,
+      "dedicatedIpsEnabled": true,
+      "privateLocationsEnabled": true,
+      "owner":       {
+        "id": 1559466,
+        "email": "kpuzey@perforce.com",
+        "displayName": "Keith Puzey"
+      },
+      "membersCount": 4,
+      "allowance":       {
+        "amount": 39987,
+        "type": "credits"
+      },
+      "accountId": 1221671
+    }
+  ],
+  "request_id": "64d1361059414",
+  "limit": 1000,
+  "skip": 0,
+  "total": 3,
+  "hidden": 0
+}
